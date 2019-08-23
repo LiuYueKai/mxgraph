@@ -3069,8 +3069,8 @@ mxGraph.prototype.sizeDidChange = function()
 	{
 		var border = this.getBorder();
 		
-		var width = Math.max(0, bounds.x + bounds.width + 2 * border * this.view.scale);
-		var height = Math.max(0, bounds.y + bounds.height + 2 * border * this.view.scale);
+		var width = Math.max(0, bounds.x + bounds.width + 2 * border * this.view.scale + 200);
+		var height = Math.max(0, bounds.y + bounds.height + 2 * border * this.view.scale + 200);
 		
 		if (this.minimumContainerSize != null)
 		{
